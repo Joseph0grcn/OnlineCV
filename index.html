@@ -18,49 +18,43 @@
 <body class="bg-secondary">
 
   <div class="container bg-dark py-5">
+
     <header class="text-center text-white mb-4">
+      <div class=" gap-2 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary lang-toggle" data-lang="tr">TR</button>
+        <button class="btn btn-primary lang-toggle" data-lang="en">EN</button>
+      </div>
       <h1 class="fw-bold">Yusuf Gürcan</h1>
-      <p>Yazılım Mühendisi</p>
+      <p data-key="softwareengineer"></p>
     </header>
 
     <main>
       <div class="text-center mb-3 menu-categories">
-        <button class="btn btn-outline-danger m-1 " data-target="anaSayfa"><i class="fas fa-home"></i>
-          Ana Sayfa</button>
-        <button class="btn btn-outline-primary m-1" data-target="iletisim"><i class="fas fa-envelope"></i>
-          İletişim</button>
-        <button class="btn btn-outline-success m-1" data-target="egitim"><i class="fas fa-graduation-cap"></i>
-          Eğitim</button>
-        <button class="btn btn-outline-warning m-1" data-target="projeler"><i class="fas fa-code"></i> Projeler</button>
+        <button class="btn btn-outline-danger m-1 " data-target="anaSayfa">
+          <i class="fas fa-home"></i> <span data-key="homepage"></span>
+        </button>
+        <button class="btn btn-outline-primary m-1" data-target="iletisim">
+          <i class="fas fa-envelope"></i> <span data-key="contact"></span>
+        </button>
+        <button class="btn btn-outline-success m-1" data-target="egitim">
+          <i class="fas fa-graduation-cap"></i> <span data-key="education"></span>
+        </button>
+        <button class="btn btn-outline-warning m-1" data-target="projeler">
+          <i class="fas fa-code"></i> <span data-key="projects"></span>
+        </button>
       </div>
       <div id="anaSayfa" class="menu-section active text-white text-center  ">
-        <h2 class="section-title">Merhaba</h2>
-        <p>Ben Yusuf Gürcan, 2025 Haziran ayında Kırklareli Üniversitesi Yazılım Mühendisliği bölümünden mezun oldum.
-          <br>
-          Eğitimim süresince yazılım geliştirme süreçlerine hâkimiyet kazandım
-          ve özellikle web teknolojileri (HTML, CSS, JavaScript) üzerine yoğunlaştım.
-          <br>
-          Ayrıca, <b class="text-primary"> Java, C++ ve Python</b> gibi programlama dillerinde de deneyim sahibiyim.
-          Eğitimim boyunca
-          çeşitli projelerde yer aldım ve bu projeler sayesinde problem çözme, takım çalışması ve yazılım geliştirme
-          süreçlerine
-          dair önemli beceriler edindim.
-          <br>
-          Ayrıca C#, .NET , C , C++ dili ve doğal dil işleme (NLP) gibi alanlarda bireysel ve ekip projelerinde görev
-          aldım. Kod kalitesine, sürdürülebilirliğe ve problem çözme becerisine önem veren, öğrenmeye açık ve disiplinli
-          bir geliştiriciyim.
-          <b>Kariyer hedefim;</b> yazılım geliştirme alanında uzmanlaşmak ve yaratıcı, katma değer sağlayan projelerde
-          etkin rol almaktır.
-          Yazılım geliştirme konusunda tutkuluyum ve sürekli öğrenmeye açığım.
-        </p>
-        <p>Bu CV, benim hakkımda daha fazla bilgi edinmenizi sağlamak için hazırlandı. İletişim bilgilerim ,
-          eğitim geçmişim ve hazırladığım projelere yukarıdaki düğmelerde ulaşabilirsiniz.</p>
+        <h2 class="section-title" data-key="welcome"></h2>
+
+        <p data-key="intro"></p>
+        <p data-key="cvNote"></p>
       </div>
       <div id="iletisim" class="menu-section text-white text-center">
-        <h2 class="section-title">İletişim</h2>
+        <h2 class="section-title" data-key="contact"></h2>
+
         <ul class="list-unstyled">
-          <li><i class="fas fa-envelope"></i> Email: yusuf.gurcan.34@hotmail.com</li>
-          <li><i class="fas fa-phone"></i> Telefon: +90 530 857 17 03</li>
+          <li><i class="fas fa-envelope"></i> <span data-key="email"></span>: yusuf.gurcan.34@hotmail.com</li>
+          <li><i class="fas fa-phone"></i> <span data-key="telephone"></span>: +90 530 857 17 03</li>
           <li><i class="fa-brands fa-github"></i> GitHub: <a href="https://github.com/Joseph0grcn"
               target="_blank">github.com/Joseph0grcn</a></li>
           <li><i class="fa-brands fa-linkedin"></i> Linkedin: <a
@@ -68,21 +62,20 @@
         </ul>
       </div>
       <div id="egitim" class="menu-section text-white text-center">
-        <h2 class="section-title text-center">Eğitim </h2>
-        <p><strong>İstanbul Bilgi Üniversitesi</strong> - Matematik %100 burlu <br> 2018 - 2021 Tamamlanmadı </p>
-        <p><strong>Kırklareli Üniversitesi </strong> – Yazılım Mühendisliği<br>2021 - 2025 Mezun Ort:3.28</p>
+        <h2 class="section-title text-center" data-key="education"></h2>
+        <p data-key="uni1"></p>
+        <p data-key="uni2"></p>
 
-        <h2 class="section-title text-center">Sertifikalarım</h2>
-
+        <h2 class="section-title text-center" data-key="certificates"></h2>
         <div class="container bg-dark">
           <div class="row justify-content-center g-4 mt-4">
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <div class="card h-100 d-flex flex-column">
                 <img src="certificate/C++_ile_Programlamaya_Giriş__Sertifika_page-0001.jpg" class="card-img-top" alt="">
                 <div class="card-body">
-                  <h5 class="card-title">C++ ile Programlamaya Giriş</h5>
+                  <h5 class="card-title" data-key="certificate1"></h5>
                   <a onclick="window.open('certificate/C++_ile_Programlamaya_Giriş__Sertifika.pdf','_blank')"
-                    class="btn btn-primary">İncele</a>
+                    class="btn btn-primary" data-key="view"></a>
                 </div>
               </div>
             </div>
@@ -90,9 +83,9 @@
               <div class="card h-100 d-flex flex-column">
                 <img src="certificate/CSS_Temelleri_Sertifika_page-0001.jpg" class="card-img-top" alt="">
                 <div class="card-body">
-                  <h5 class="card-title">CSS Temelleri</h5>
-                  <a onclick="window.open('certificate/CSS_Temelleri_Sertifika.pdf','_blank')"
-                    class="btn btn-primary">İncele</a>
+                  <h5 class="card-title" data-key="certificate2"></h5>
+                  <a onclick="window.open('certificate/CSS_Temelleri_Sertifika.pdf','_blank')" class="btn btn-primary"
+                    data-key="view"></a>
                 </div>
               </div>
             </div>
@@ -100,9 +93,9 @@
               <div class="card h-100 d-flex flex-column">
                 <img src="certificate/HTML5_ile_Web_Geliştirme_Sertifika_page-0001.jpg" class="card-img-top" alt="">
                 <div class="card-body">
-                  <h5 class="card-title">HTML5 ile Web Geliştirme</h5>
+                  <h5 class="card-title" data-key="certificate3"></h5>
                   <a onclick="window.open('certificate/HTML5_ile_Web_Geliştirme_Sertifika.pdf','_blank')"
-                    class="btn btn-primary">İncele</a>
+                    class="btn btn-primary" data-key="view"></a>
                 </div>
               </div>
             </div>
@@ -112,9 +105,9 @@
               <div class="card h-100 d-flex flex-column">
                 <img src="certificate/JAVA_ile_Programlamaya_Giriş_Sertifika_page-0001.jpg" class="card-img-top" alt="">
                 <div class="card-body">
-                  <h5 class="card-title">JAVA ile Programlamaya Giriş</h5>
+                  <h5 class="card-title" data-key="certificate4"></h5>
                   <a onclick="window.open('certificate/JAVA_ile_Programlamaya_Giriş_Sertifika.pdf','_blank')"
-                    class="btn btn-primary">İncele</a>
+                    class="btn btn-primary" data-key="view"></a>
                 </div>
               </div>
             </div>
@@ -122,9 +115,9 @@
               <div class="card h-100 d-flex flex-column">
                 <img src="certificate/jQuery_ile_Web_Programcılığı_Sertifika_page-0001.jpg" class="card-img-top" alt="">
                 <div class="card-body">
-                  <h5 class="card-title">jQuery ile Web Programcılığı</h5>
+                  <h5 class="card-title" data-key="certificate5"></h5>
                   <a onclick="window.open('certificate/jQuery_ile_Web_Programcılığı_Sertifika.pdf','_blank')"
-                    class="btn btn-primary">İncele</a>
+                    class="btn btn-primary " data-key="view"></a>
                 </div>
               </div>
             </div>
@@ -133,9 +126,9 @@
                 <img src="certificate/Kotlin_ile_Android_Mobil_Uygulama_Geliştirme_Temel_Seviye_Sertifika_page-0001.jpg"
                   class="card-img-top" alt="">
                 <div class="card-body">
-                  <h5 class="card-title">Kotlin ile Android Mobil Uygulama Geliştirme</h5>
+                  <h5 class="card-title" data-key="certificate6"></h5>
                   <a onclick="window.open('certificate/Kotlin_ile_Android_Mobil_Uygulama_Geliştirme_Temel_Seviye_Sertifika.pdf','_blank')"
-                    class="btn btn-primary">İncele</a>
+                    class="btn btn-primary" data-key="view"></a>
                 </div>
               </div>
             </div>
@@ -146,9 +139,9 @@
                 <img src="certificate/Uygulamalarla_SQL_Öğreniyorum_Sertifika_page-0001.jpg" class="card-img-top"
                   alt="">
                 <div class="card-body">
-                  <h5 class="card-title">Uygulamalarla SQL Öğreniyorum</h5>
+                  <h5 class="card-title" data-key="certificate7"></h5>
                   <a onclick="window.open('certificate/Uygulamalarla_SQL_Öğreniyorum_Sertifika.pdf','_blank')"
-                    class="btn btn-primary">İncele</a>
+                    class="btn btn-primary" data-key="view"></a>
                 </div>
               </div>
             </div>
@@ -158,8 +151,7 @@
 
       </div>
       <div id="projeler" class="menu-section text-white text-center">
-
-        <h2>Projeler</h2>
+        <h2 data-key="projects"></h2>
         <ul>
           <li>Uzay Simülasyonu – C ile yazılmış basit fizik motoru</li>
           <li>Restoran Menü Demo – HTML/CSS ile responsive menü</li>
@@ -169,8 +161,8 @@
     </main>
   </div>
   <footer class="text-center mt-4">
-    <p>&copy; 2025 Yusuf Gürcan</p>
-    <p>Bu CV, kişisel bilgiler içermektedir ve sadece referans amaçlıdır.</p>
+    <p>&copy; <span data-key="copy"></span></p>
+    <p data-key="info"></p>
     <script src="script.js"></script>
 </body>
 
